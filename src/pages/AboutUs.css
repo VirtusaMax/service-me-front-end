@@ -1,0 +1,41 @@
+.about-us {
+  text-align: left;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.about-us h2 {
+  color: #FCC215; 
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.about-us-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #FCC215; 
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.about-us-item {
+  width: 20%;
+  text-align: left;
+  color: #000;
+}
+
+.about-us-item h3 {
+  font-size: 1.0em;
+  margin: 10px 0;
+}
+
+.about-us-item p {
+  font-size: 0.9em;
+}
+
+.about-us-item span {
+  font-size: 2em;
+  display: block;
+  margin-bottom: 10px;
+}
