@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import './App.css'
+import React from 'react';
+import './Service_section.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -107,3 +107,6 @@ const data =[
     Let us give you peace of mind with reliable, compassionate care."`,
     },
 ]
+
+
+export default service_section;
