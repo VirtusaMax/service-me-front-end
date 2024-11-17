@@ -126,6 +126,7 @@ const ServiceSection = () => {
   return (
     <div className="service-section-container m-10">
       <div className="mt-20">
+        <p className="heading-3" > our services </p>
         <Slider {...settings}>
           {data.map((d, index) => (
             <div

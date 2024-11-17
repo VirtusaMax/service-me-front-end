@@ -1,6 +1,13 @@
 .bg-custom-yellow { 
     background-color:rgba(252, 194, 21, 0.6);
   }
+
+  .heading-3 {
+    text-align: left;
+    color:#FCC215;
+    font-size: 36px;
+    font-weight: bold;
+  }
   
  
   .slick-prev.custom-arrow,
