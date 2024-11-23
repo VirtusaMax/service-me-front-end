@@ -1,9 +1,7 @@
-import React from 'react';
-import './AboutUs.css';
-import chalaniImage1 from '../assets/truck.png';
-import chalaniImage2 from '../assets/workers.png';
-import chalaniImage3 from '../assets/help.png';
-import chalaniImage4 from '../assets/ok_hand.png';
+import chalaniImage1 from '../assets/service_section/truck.png';
+import chalaniImage2 from '../assets/service_section/workers.png';
+import chalaniImage3 from '../assets/service_section/help.png';
+import chalaniImage4 from '../assets/service_section/ok_hand.png';
 
 const aboutUsData = [
   {
@@ -32,21 +30,4 @@ const aboutUsData = [
   },
 ];
 
-const AboutUs = () => {
-  return (
-    <div className="about-us">
-      <h2>ABOUT US</h2>
-      <div className="about-us-container">
-        {aboutUsData.map((item, index) => (
-          <div key={index} className="about-us-item">
-            <img src={item.img} alt={item.alt} />
-            <h3><b>{item.title}</b></h3>
-            <p>{item.description}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-export default AboutUs;
+export default aboutUsData;

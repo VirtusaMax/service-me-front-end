@@ -1,11 +1,11 @@
+import AboutUs from './components/custom-components/AboutUs';
 import React from 'react'
-import AboutUs from './pages/AboutUs';
 import './App.css'
 
 function App() {
   return (
     <div className='h-screen'>
-      <AboutUs />
+      <AboutUs/>
     </div>
   )
 }
