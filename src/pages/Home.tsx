@@ -3,7 +3,7 @@ import Services from '../section/service/Services'
 
 const Home = () => {
   return (
-    <div className='flex flex-col bg-black'>
+    <div className='flex flex-col bg-white'>
       <Services/>
     </div>
   )

@@ -1,30 +1,78 @@
-import React from "react"; 
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ServiceCard from "../../components/custom-components/ServiceCard"; 
-import serviceCardData from "../../data/serviceCardData.json"; // Import the JSON data
+import ServiceCard from "../../components/custom-components/ServiceCard";
+import serviceCardData from "../../data/serviceCardData.json"; 
 
 function NextArrow(props) {
-  const { className, onClick } = props;
+  const { onClick } = props;
   return (
     <div
-      className={`custom-arrow slick-next ${className}`}
       onClick={onClick}
+      style={{
+        position: "absolute",
+        top: "50%",
+        right: "-10px",
+        transform: "translateY(-50%)",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        // width: "40px",
+        // height: "40px",
+        // backgroundColor: "#FCC215",
+        // borderRadius: "50%",
+        cursor: "pointer",
+        zIndex: 2,
+        boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
+      }}
     >
-      &#10095;
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="black"
+        strokeWidth={2}
+        style={{ width: "20px", height: "20px" }}
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+      </svg>
     </div>
   );
 }
 
 function PrevArrow(props) {
-  const { className, onClick } = props;
+  const { onClick } = props;
   return (
     <div
-      className={`custom-arrow slick-prev ${className}`}
       onClick={onClick}
+      style={{
+        position: "absolute",
+        top: "50%",
+        left: "-10px",
+        transform: "translateY(-50%)",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        // width: "40px",
+        // height: "40px",
+        // backgroundColor: "#FCC215",
+        // borderRadius: "50%",
+        cursor: "pointer",
+        zIndex: 2,
+        boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
+      }}
     >
-      &#10094;
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="black"
+        strokeWidth={2}
+        style={{ width: "20px", height: "20px" }}
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+      </svg>
     </div>
   );
 }
@@ -59,19 +107,28 @@ const Services = () => {
   };
 
   return (
-    <div className="m-2">
+    <div className="relative m-2">
       <div className="mt-20">
-        <p className="heading-3"> our services </p>
+        <p
+          style={{
+            fontSize: "36px", 
+            fontWeight: "bold", 
+            color: "#FCC215",
+            textAlign: "left", 
+            marginBottom: "20px", 
+          }}
+        >
+          our services
+        </p>
         <Slider {...settings}>
           {serviceCardData.map((d, index) => (
-            <div className="grid gird-col-3 xl:grid-cols-5">
+            <div key={index}>
               <ServiceCard
-              key={index}
-              name={d.name}
-              img={d.img}
-              img1={d.img1}
-              description={d.description}
-            />
+                name={d.name}
+                img={d.img}
+                img1={d.img1}
+                description={d.description}
+              />
             </div>
           ))}
         </Slider>
