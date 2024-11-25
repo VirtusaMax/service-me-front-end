@@ -4,9 +4,7 @@ import ServiceSection from '../sections/home/ServiceSection'
 const Home = () => {
   return (
     <div>
-      <div>
-        <ServiceSection/>
-      </div>
+     <ServiceSection/>
     </div>
   )
 }

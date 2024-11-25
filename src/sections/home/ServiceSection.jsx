@@ -76,7 +76,7 @@ const ServiceSection = () => {
           {serviceData.map((d, index) => (
             <div
               key={index}
-              className="bg-yellow-400 h-[343px] w-[316px] text-black rounded-[10px] shadow-lg flex flex-col items-center p-4"
+              className="bg-yellow-400 h-[343px] w-[316px] text-black rounded-xs shadow-lg flex flex-col items-center p-4"
             >
               <div className="flex justify-center items-center w-full h-[175px]">
                 <img
