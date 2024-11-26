@@ -4,28 +4,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ServiceCard from "../../components/custom-components/ServiceCard";
 import serviceCardData from "../../data/serviceCardData.json"; 
+import "../../index.css";
+
 
 function NextArrow(props) {
   const { onClick } = props;
   return (
-    <div
+    <div  className="slick-arrow -right-8"
       onClick={onClick}
-      style={{
-        position: "absolute",
-        top: "50%",
-        right: "-10px",
-        transform: "translateY(-50%)",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        // width: "40px",
-        // height: "40px",
-        // backgroundColor: "#FCC215",
-        // borderRadius: "50%",
-        cursor: "pointer",
-        zIndex: 2,
-        boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
-      }}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +19,7 @@ function NextArrow(props) {
         viewBox="0 0 24 24"
         stroke="black"
         strokeWidth={2}
-        style={{ width: "20px", height: "20px" }}
+        style={{ width: "30px", height: "30px" }}
       >
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
       </svg>
@@ -44,24 +30,9 @@ function NextArrow(props) {
 function PrevArrow(props) {
   const { onClick } = props;
   return (
-    <div
+    <div className="slick-arrow -left-4"
       onClick={onClick}
-      style={{
-        position: "absolute",
-        top: "50%",
-        left: "-10px",
-        transform: "translateY(-50%)",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        // width: "40px",
-        // height: "40px",
-        // backgroundColor: "#FCC215",
-        // borderRadius: "50%",
-        cursor: "pointer",
-        zIndex: 2,
-        boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
-      }}
+      
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +40,7 @@ function PrevArrow(props) {
         viewBox="0 0 24 24"
         stroke="black"
         strokeWidth={2}
-        style={{ width: "20px", height: "20px" }}
+        style={{ width: "30px", height: "30px" }}
       >
         <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
       </svg>
@@ -108,7 +79,7 @@ const Services = () => {
 
   return (
     <div className="relative m-2">
-      <div className="mt-20">
+      <div className="mt-20 m-2">
         <p
           style={{
             fontSize: "36px", 
