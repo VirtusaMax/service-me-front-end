@@ -18,16 +18,14 @@ function Navbar() {
                     <img src={logo} alt="Service Me Logo" className="w-16 h-10" />
                 </div>
 
-                {/* Navigation Links */}
-                <div className="hidden md:flex ml-auto space-x-6">
+                 <div className="hidden md:flex ml-auto space-x-6">
                     <a href="/" className="hover:underline">HOME</a>
                     <a href="/about" className="hover:underline">ABOUT US</a>
                     <a href="/find-job" className="hover:underline">FIND JOB</a>
                     <a href="/services" className="hover:underline">SERVICES</a>
                 </div>
 
-                {/* Action Buttons */}
-                <div className="flex items-center space-x-4 md:ml-6">
+                 <div className="flex items-center space-x-4 md:ml-6">
                     <button className="bg-yellow-400 text-black px-4 py-2 rounded-md hover:bg-yellow-500">
                         POST JOB
                     </button>
@@ -38,8 +36,7 @@ function Navbar() {
                     />
                 </div>
 
-                {/* Hamburger Menu for Small Screens */}
-                <button
+                 <button
                     className="block md:hidden focus:outline-none ml-auto"
                     onClick={toggleNavbar}
                 >
@@ -69,8 +66,7 @@ function Navbar() {
                 </button>
             </div>
 
-            {/* Dropdown Menu for Small Screens */}
-            {isOpen && (
+             {isOpen && (
                 <div className="md:hidden space-y-4 mt-4 text-center">
                     <a href="/" className="block hover:underline">HOME</a>
                     <a href="/about" className="block hover:underline">ABOUT US</a>
