@@ -13,7 +13,6 @@ function Navbar() {
     return (
         <nav className="bg-[#0b0018] text-white p-4">
             <div className="flex items-center justify-between">
-                {/* Logo Section */}
                 <div className="flex items-center">
                     <img src={logo} alt="Service Me Logo" className="w-16 h-10" />
                 </div>
