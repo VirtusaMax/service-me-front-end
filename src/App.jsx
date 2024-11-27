@@ -1,11 +1,11 @@
 import React from 'react'
-import Service_section from './pages/Service_section';
+import Home from './pages/Home';
 
 
 function App() {
   return (
     <div className=''>
-      <Service_section />
+      <Home/>
     </div>
   )
 }
