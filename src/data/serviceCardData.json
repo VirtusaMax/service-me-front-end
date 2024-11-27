@@ -1,57 +1,56 @@
 [
-    {
-      "name": "DRIVING",
-      "img": "src/assets/service_section/driver.png",
-      "img1": "src/assets/service_section/dri.png",
-      "description": "Our professional drivers prioritize your safety and punctuality. With expert navigation skills, they ensure a smooth and efficient journey. Trust us to get you to your destination comfortably and on time."
-    },
-    {
-      "name": "CLEANING",
-      "img": "src/assets/service_section/cleaning.png",
-      "img1": "src/assets/service_section/cle.png",
-      "description": "Get your home or office sparkling clean with our expert cleaners. We ensure every corner shines, leaving a fresh, welcoming space. Trust us for a thorough and professional clean every time."
-    },
-    {
-      "name": "COOKING",
-      "img": "src/assets/service_section/cooking.png",
-      "img1": "src/assets/service_section/coo.png",
-      "description": "Enjoy delicious meals prepared by skilled chefs in the comfort of your home. We bring gourmet flavors to your table, crafted with care and expertise. Let us handle the cooking while you savor every bite."
-    },
-    {
-      "name": "PAINTING",
-      "img": "src/assets/service_section/painting.png",
-      "img1": "src/assets/service_section/pai.png",
-      "description": "Transform your home with high-quality painting services that elevate its look and feel. Our skilled painters ensure a flawless finish, tailored to your style. Trust us to bring vibrant, lasting colors to your space."
-    },
-    {
-      "name": "REPAIRING",
-      "img": "src/assets/service_section/reparing.png",
-      "img1": "src/assets/service_section/rep.png",
-      "description": "Count on reliable home repair services for all your appliance and improvement needs. Our skilled technicians ensure timely, effective solutions for every project. Enjoy peace of mind with our trusted, high-quality repairs."
-    },
-    {
-      "name": "PLUMBING",
-      "img": "src/assets/service_section/plumbing.png",
-      "img1": "src/assets/service_section/plu.png",
-      "description": "Get quick and efficient plumbing solutions to keep your home running smoothly. Our experienced plumbers handle every issue with precision and care. Rely on us for prompt, reliable service you can trust."
-    },
-    {
-      "name": "BEAUTY",
-      "img": "src/assets/service_section/beauty.png",
-      "img1": "src/assets/service_section/bea.png",
-      "description": "Experience professional hair, makeup, and skincare treatments tailored to enhance your natural beauty. Our skilled specialists use top-quality products and techniques to give you a flawless look."
-    },
-    {
-      "name": "ELDER CARE",
-      "img": "src/assets/service_section/elder.png",
-      "img1": "src/assets/service_section/eld.png",
-      "description": "Caring support for seniors in managing daily activities. Our compassionate caregivers assist with respect and patience, ensuring comfort and independence."
-    },
-    {
-      "name": "CHILD CARE",
-      "img": "src/assets/service_section/child.png",
-      "img1": "src/assets/service_section/chi.png",
-      "description": "Trusted nannies dedicated to your child's safety and happiness. Our caregivers provide attentive, nurturing support in a secure environment."
-    }
-  ]
-  
+  {
+    "name": "DRIVING",
+    "img": "src/assets/service_section/driver.png",
+    "img1": "src/assets/service_section/dri.png",
+    "description": "Our professional drivers ensure your safety and punctuality with smooth navigation. Trust us to deliver a comfortable, efficient, and reliable journey to your destination."
+  },
+  {
+    "name": "CLEANING",
+    "img": "src/assets/service_section/cleaning.png",
+    "img1": "src/assets/service_section/cle.png",
+    "description": "Let our expert cleaners transform your home or office into a sparkling space. We ensure every detail is handled with care, leaving behind freshness and perfection."
+  },
+  {
+    "name": "COOKING",
+    "img": "src/assets/service_section/cooking.png",
+    "img1": "src/assets/service_section/coo.png",
+    "description": "Relish expertly prepared meals crafted by our talented chefs in your home. We create flavorsome dishes with care and precision, letting you enjoy delicious moments stress-free."
+  },
+  {
+    "name": "PAINTING",
+    "img": "src/assets/service_section/painting.png",
+    "img1": "src/assets/service_section/pai.png",
+    "description": "Enhance your home with professional painting services that deliver flawless results. Our painters work with precision and creativity to transform your space beautifully."
+  },
+  {
+    "name": "REPAIRING",
+    "img": "src/assets/service_section/reparing.png",
+    "img1": "src/assets/service_section/rep.png",
+    "description": "Get reliable home repair services for your appliances and other needs. Skilled technicians ensure timely and effective solutions, giving you peace of mind and convenience."
+  },
+  {
+    "name": "PLUMBING",
+    "img": "src/assets/service_section/plumbing.png",
+    "img1": "src/assets/service_section/plu.png",
+    "description": "Quick, efficient plumbing solutions tailored to your needs. Our experienced plumbers handle every issue with precision, care, and expertise to keep your home running smoothly."
+  },
+  {
+    "name": "BEAUTY",
+    "img": "src/assets/service_section/beauty.png",
+    "img1": "src/assets/service_section/bea.png",
+    "description": "Treat yourself to professional beauty services tailored to enhance your look. Skilled specialists provide flawless hair, makeup, and skincare treatments using quality products."
+  },
+  {
+    "name": "ELDER CARE",
+    "img": "src/assets/service_section/elder.png",
+    "img1": "src/assets/service_section/eld.png",
+    "description": "Compassionate elder care tailored to your loved ones’ needs. Our caregivers assist with daily activities, offering comfort, independence, and respect in every interaction."
+  },
+  {
+    "name": "CHILD CARE",
+    "img": "src/assets/service_section/child.png",
+    "img1": "src/assets/service_section/chi.png",
+    "description": "Dedicated child care providers ensure a safe and nurturing environment. We focus on your child’s happiness, safety, and development with attentive, loving support."
+  }
+]
