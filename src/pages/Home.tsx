@@ -1,10 +1,12 @@
 import React from 'react'
-import ServiceSection from '../sections/home/ServiceSection'
+import Services from '../section/service/Services'
+import AboutUs from '../section/about/AboutUs'
 
 const Home = () => {
   return (
-    <div>
-     <ServiceSection/>
+    <div className='flex flex-col bg-white max-w-[1600px]'>
+      <AboutUs/>
+      <Services/>
     </div>
   )
 }
