@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import { Bars3BottomLeftIcon, XMarkIcon, UserCircleIcon } from '@heroicons/react/24/solid'; // Import icons
 import logo from "../../assets/header_section/logo1.png";
+import StandardLayout from "../../components/layout/StandardLayout";
+
 
 const Navbar = () => {
     const Links = [

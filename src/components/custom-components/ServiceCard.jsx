@@ -2,6 +2,7 @@ import React from "react";
 
 const ServiceCard = ({ name, img, img1, description }) => {
   return (
+
     <div className="bg-[#0E0524] h-[350px] w-fit text-black rounded-xl shadow-lg flex flex-col p-4 ">
       <div className="flex justify-center items-center w-full h-[175px]">
         <img
@@ -28,6 +29,7 @@ const ServiceCard = ({ name, img, img1, description }) => {
         </button>
       </div>
     </div>
+  
   );
 };
 

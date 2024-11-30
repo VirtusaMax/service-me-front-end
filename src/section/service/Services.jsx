@@ -5,11 +5,14 @@ import "slick-carousel/slick/slick-theme.css";
 import ServiceCard from "../../components/custom-components/ServiceCard";
 import serviceCardData from "../../data/serviceCardData.json"; 
 import "../../index.css";
+import StandardLayout from "../../components/layout/StandardLayout";
+
 
 
 function NextArrow(props) {
   const { onClick } = props;
   return (
+    <StandardLayout>
     <div  className="slick-arrow -right-8"
       onClick={onClick}
     >
@@ -24,6 +27,7 @@ function NextArrow(props) {
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
       </svg>
     </div>
+    </StandardLayout>
   );
 }
 

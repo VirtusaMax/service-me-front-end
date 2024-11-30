@@ -4,6 +4,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { getServiceData } from "../../api/service";
+import StandardLayout from "../../components/layout/StandardLayout";
+
 
 function NextArrow(props) {
   const { className, onClick } = props;
@@ -69,6 +71,7 @@ const ServiceSection = () => {
   };
 
   return (
+    <StandardLayout>
     <div className="service-section-container m-10">
       <div className="mt-20">
         <p className="heading-3"> our services </p>
@@ -107,6 +110,7 @@ const ServiceSection = () => {
         </Slider>
       </div>
     </div>
+    </StandardLayout>
   );
 };
 

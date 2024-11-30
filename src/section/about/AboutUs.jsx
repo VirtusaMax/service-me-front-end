@@ -1,9 +1,12 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import aboutUsData from "../../data/aboutUsData.json";
+import StandardLayout from "../../components/layout/StandardLayout";
+
 
 const AboutUs = () => {
   return (
+    <StandardLayout>
     <section className="bg-white text-left p-8">
       <h2 className="text-3xl font-bold mb-8 text-yellow-400">ABOUT US</h2>
       <div className="bg-yellow-400 rounded-lg shadow-lg p-6 grid gird-col-1 sm:grid-cols-2 xl:grid-cols-4 mx-auto">
@@ -20,6 +23,7 @@ const AboutUs = () => {
         ))}
       </div>
     </section>
+    </StandardLayout>
   );
 };
 
