@@ -1,12 +1,13 @@
 import React from 'react'
 import Services from '../section/service/Services'
 import AboutUs from '../section/about/AboutUs'
-import Header from '../components/custom-components/Header'
+import Header from '../components/custom-components/Navbar'
+import Navbar from '../components/custom-components/Navbar'
 
 const Home = () => {
   return (
     <div className='flex flex-col bg-white max-w-[1600px]'>
-      <Header/>
+      <Navbar/>
       <AboutUs/>
       <Services/>
     </div>

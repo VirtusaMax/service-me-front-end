@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Bars3BottomLeftIcon, XMarkIcon, UserCircleIcon } from '@heroicons/react/24/solid'; // Import icons
 import logo from "../../assets/header_section/logo1.png";
 
-const Header = () => {
+const Navbar = () => {
     const Links = [
         { name: 'Home', link: '/' },
         { name: 'About', link: '/about' },
@@ -67,4 +67,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default Navbar;
