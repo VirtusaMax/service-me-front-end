@@ -1,4 +1,4 @@
-// eslint-disable-next-line no-unused-vars
+
 import React, { useState } from 'react';
 import { Bars3BottomLeftIcon, XMarkIcon, UserCircleIcon } from '@heroicons/react/24/solid'; // Import icons
 import logo from "../../assets/header_section/logo1.png";
@@ -50,7 +50,7 @@ const Header = () => {
                     ))}
 
                     
-                    <button className='btn bg-yellow-400 text-black py- px-3 md:ml-8 rounded md:static mr-4'>
+                    <button className='btn  md:bg-yellow-400 bg-[#0E0524]  md:text-black text-white py- px-3 md:ml-8 rounded md:static mr-4'>
                         POST JOB
                     </button>
                 </ul>
