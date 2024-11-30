@@ -4,8 +4,8 @@ import aboutUsData from "../../data/aboutUsData.json";
 
 const AboutUs = () => {
   return (
-    <section className="bg-F6F1F1 text-left p-8">
-      <h2 className="text-3xl font-bold mt-28 mb-2 text-yellow-400">ABOUT US</h2>
+    <section className="bg-[#F6F1F1] text-left p-8">
+      <h2 className="font-bold mt-28 mb-2 text-4xl text-yellow-400">ABOUT US</h2>
       <div className="bg-yellow-400 mt-5 rounded-lg shadow-lg p-6 grid gird-col-1 sm:grid-cols-2 xl:grid-cols-4 mx-auto">
         {aboutUsData.map((item, index) => (
           <div key={index} className="sm:text-left max-w-[282px] m-8">
