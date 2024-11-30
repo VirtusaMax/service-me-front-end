@@ -19,7 +19,7 @@ function NextArrow(props) {
         viewBox="0 0 24 24"
         stroke="black"
         strokeWidth={2}
-        style={{ width: "30px", height: "30px" }}
+        style={{ width: "30px", height: "30px"  }}
       >
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
       </svg>
@@ -78,8 +78,8 @@ const Services = () => {
   };
 
   return (
-    <div className="relative m-2">
-      <div className="mt-20 m-2">
+    <div className="relative m-2 p-8">
+      <div className="mt-5 m-1">
         <p
           style={{
             fontSize: "36px", 
@@ -89,7 +89,7 @@ const Services = () => {
             marginBottom: "20px", 
           }}
         >
-          our services
+          OUR SERVICES
         </p>
         <Slider {...settings}>
           {serviceCardData.map((d, index) => (
