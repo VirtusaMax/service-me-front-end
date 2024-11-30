@@ -79,7 +79,7 @@ const Services = () => {
 
   return (
     <div className="relative m-2 p-8">
-      <div className="mt-20 m-2">
+      <div className="mt-5 m-2">
         <p
           style={{
             fontSize: "36px", 
