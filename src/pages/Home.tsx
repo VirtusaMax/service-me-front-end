@@ -1,7 +1,6 @@
 import React from 'react'
 import Services from '../section/service/Services'
 import AboutUs from '../section/about/AboutUs'
-import Header from '../components/custom-components/Navbar'
 import Navbar from '../components/custom-components/Navbar'
 
 const Home = () => {

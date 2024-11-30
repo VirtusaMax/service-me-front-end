@@ -36,7 +36,7 @@ const Navbar = () => {
 
                  
                 <ul
-                    className={`md:flex md:items-center md:ml-auto md:pb-0 pb-14 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-12 transition-all duration-500 ease-in ${isOpen ? 'top-14' : 'top-[-490px]'}`}
+                    className={`md:flex md:items-center md:ml-auto md:pb-0 pb-14 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-12 transition-all bg-[#0E0524] text-white duration-500 ease-in ${isOpen ? 'top-14' : 'top-[-490px]'}`}
                     style={{ color: isOpen ? '' : 'white' }}  
                 >
                     {Links.map((link, index) => (
