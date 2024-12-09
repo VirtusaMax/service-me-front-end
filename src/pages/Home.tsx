@@ -2,6 +2,7 @@ import React from 'react'
 import Services from '../section/service/Services'
 import AboutUs from '../section/about/AboutUs'
 import Navbar from '../components/custom-components/Navbar'
+import Register from '../section/register_section/Register'
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Navbar/>
       <AboutUs/>
       <Services/>
+      <Register/>
     </div>
   )
 }
