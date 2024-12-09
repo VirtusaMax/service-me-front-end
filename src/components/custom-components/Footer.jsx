@@ -68,7 +68,7 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="text-center text-sm text-gray-300 mt-10">
-          <p className="text-orange-500">&copy; 2024 Service Me. All Rights Reserved.</p>
+          <p className="text-yellow-500">&copy; 2024 Service Me. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
