@@ -7,57 +7,16 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
 import background from '../../assets/register_section/backlogo.png';
-
-const profiles = [
-  {
-    name: 'Alex B.',
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRU68AVwhBfw6sjuntzSy2sDEgBh8Aff69qBRgYumT-Kpwp-IRPOXboKdpN45yi85gPcs&usqp=CAU',
-  },
-  {
-    name: 'Jessica',
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIqvNKP_YZYQuW0NiswBoHDTmDnwrfeNBLFKvmPITll9E2LXzDnOpZ7lPUprIvrCuI2wI&usqp=CAU',
-  },
-  {
-    name: 'Chamen',
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTImSDKr9ZPHb81653a12uwsdTDwbmn_27Log&s',
-  },
-  {
-    name: 'Jacob',
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf3Svt3lP8tIlKr0UMsNQdKxy0NyNgAaOtakf4IX_tMcSgfRT-we77rWVBxByRhRdfEkw&usqp=CAU',
-  },
-  {
-    name: 'Jonathan',
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0ROxIb7mD-40KbZPoABni9yd5vujo40uqcwK1EJIjCU2KsY4Uyk68wORiPncri1cCZBQ&usqp=CAU',
-  },
-  {
-    name: 'Alex B.',
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRU68AVwhBfw6sjuntzSy2sDEgBh8Aff69qBRgYumT-Kpwp-IRPOXboKdpN45yi85gPcs&usqp=CAU',
-  },
-  {
-    name: 'Jessica',
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIqvNKP_YZYQuW0NiswBoHDTmDnwrfeNBLFKvmPITll9E2LXzDnOpZ7lPUprIvrCuI2wI&usqp=CAU',
-  },
-  {
-    name: 'Chamen',
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTImSDKr9ZPHb81653a12uwsdTDwbmn_27Log&s',
-  },
-  {
-    name: 'Jacob',
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf3Svt3lP8tIlKr0UMsNQdKxy0NyNgAaOtakf4IX_tMcSgfRT-we77rWVBxByRhRdfEkw&usqp=CAU',
-  },
-  {
-    name: 'Jonathan',
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0ROxIb7mD-40KbZPoABni9yd5vujo40uqcwK1EJIjCU2KsY4Uyk68wORiPncri1cCZBQ&usqp=CAU',
-  },
-];
+import profileData from "../../data/profileData.json";
 
 const Register = () => {
   return (
     <div className="relative isolate overflow-hidden bg-custom-light py-12 sm:py-16 px-4 sm:px-6 md:px-8 lg:px-12">
       <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-12 lg:gap-16">
+
         {/* Left Section */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
-          <h2 className="font-bold text-5xl  py-16 sm:text-4xl font-bold tracking-tight text-custom-yellow">
+          <h2 className="text-5xl  py-16 sm:text-4xl font-bold tracking-tight text-custom-yellow">
             Meet the Best Service Providers
           </h2>
           <p className=" text-base sm:text-lg font-medium text-gray-700">
@@ -97,7 +56,7 @@ const Register = () => {
             grabCursor={true}
             className="max-w-full mx-auto"
           >
-            {profiles.map((profile, index) => (
+            {profileData.map((profile, index) => (
               <SwiperSlide key={index} className="text-center">
                 <div className="relative bg-yellow-400 border-4 border-black  text-center rounded-lg p-4 shadow-lg transform transition-transform duration-300 ease-in-out hover:scale-105">
                   <img
