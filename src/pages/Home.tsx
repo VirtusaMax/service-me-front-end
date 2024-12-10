@@ -14,10 +14,10 @@ const Home = () => {
       <Navbar/>
       <HeroSection/>
       <AboutUs/>
+      <Register/>
       <Services/>
       <HowItWorks/>
       <Footer />
-      <Register/>
     </div>
   )
 }
