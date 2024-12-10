@@ -5,6 +5,7 @@ import Navbar from '../components/custom-components/Navbar'
 import HowItWorks from '../components/custom-components/HowItWorks'
 import HeroSection from '../components/custom-components/HeroSection'
 import Footer from '../components/custom-components/Footer'
+import Register from '../section/register_section/Register'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Navbar/>
       <HeroSection/>
       <AboutUs/>
+      <Register/>
       <Services/>
       <HowItWorks/>
       <Footer />
