@@ -14,7 +14,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className='shadow-md w-full fixed top-0 left-0'>
+        <div className='shadow-md w-full fixed top-0 left-0 border-b-4 border-white'>
             <div className='md:px-10 py-4 px-7 flex justify-between items-center bg-[#0E0524] h-[80px]'>
  
                  <div className='flex text-2xl items-center gap-2'>
