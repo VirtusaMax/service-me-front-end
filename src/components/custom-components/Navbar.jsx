@@ -43,14 +43,14 @@ const Navbar = () => {
                         <li key={index} className='font-inter font-semibold my-7 md:my-0 md:ml-8'>
                             <a
                                 href={link.link}
-                                className="text-black md:text-white">
+                                className="text-white hover:underline">
                                 {link.name}
                             </a>
                         </li>
                     ))}
 
                     
-                    <button className='btn  md:bg-yellow-400 bg-[#0E0524]  md:text-black text-white py- px-3 md:ml-8 rounded md:static mr-4'>
+                    <button className='btn bg-yellow-400  text-black py- px-3 md:ml-8 rounded md:static mr-4'>
                         POST JOB
                     </button>
                 </ul>
