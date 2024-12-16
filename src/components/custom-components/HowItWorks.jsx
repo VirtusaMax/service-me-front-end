@@ -16,16 +16,16 @@ const HowItWorks = () => {
         <h2 className="text-yellow-400 text-3xl font-extrabold mb-8 text-left">
           HOW IT WORKS?
         </h2>
-        <div className="bg-gray-300 flex justify-center items-center py-15 px-6 md:py-32 md:h-[400px] w-full">
+         
           
-          <div className="w-[640px] h-[360px] md:w-full md:h-full">
+          <div className="w-[640px] h-[360px] md:w-50 md:h-100 ml-20">
           <ReactPlayer
-            url="https://youtu.be/RGOj5yH7evk?si=bav0TqQwvDvzzgrE"
+            url="https://youtu.be/0x5mf8BUJZY?si=xNZbFJSKlt9bKY4A"
             width="100%"
             height="100%"
             controls
           />
-        </div>
+         
         </div>
       </div>
     </div>
