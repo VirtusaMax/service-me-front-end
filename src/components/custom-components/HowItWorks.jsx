@@ -5,7 +5,7 @@ import ReactPlayer from "react-player";
 const HowItWorks = () => {
   return (
     <div
-      className="relative bg-cover bg-center py-20 px-14 h-[600px] w-full top-4"
+      className="relative bg-cover bg-center py-20 px-4 sm:px-8 md:px-14 h-auto w-full top-4"
       style={{
         backgroundImage: `url(${backgroundImage})`,
       }}
@@ -16,16 +16,17 @@ const HowItWorks = () => {
         <h2 className="text-yellow-400 text-3xl font-extrabold mb-8 text-left">
           HOW IT WORKS?
         </h2>
-         
-          
-          <div className="w-[640px] h-[360px] md:w-50 md:h-100 ml-20">
-          <ReactPlayer
-            url="https://youtu.be/0x5mf8BUJZY?si=xNZbFJSKlt9bKY4A"
-            width="100%"
-            height="100%"
-            controls
-          />
-         
+
+        <div className="mx-auto max-w-4xl">
+          <div className="relative pb-[56.25%] h-0">
+            <ReactPlayer
+              url="https://youtu.be/0x5mf8BUJZY?si=xNZbFJSKlt9bKY4A"
+              className="absolute top-0 left-0 w-full h-full"
+              width="100%"
+              height="100%"
+              controls
+            />
+          </div>
         </div>
       </div>
     </div>
