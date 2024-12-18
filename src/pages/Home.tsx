@@ -12,10 +12,10 @@ const Home = () => {
     <div className='flex flex-col bg-white max-w-[1600px]'>
       
       <Navbar/>
-      {/* <HeroSection/> */}
+      <HeroSection/>
       <AboutUs/>
-      <Register/>
       <Services/>
+      <Register/>
       <HowItWorks/>
       <Footer />
     </div>
