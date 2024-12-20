@@ -5,25 +5,63 @@ import googlePlayBadge from "../../assets/footer_section/playbutton.png";
 const Footer = () => {
   return (
     <footer
-      className="relative w-full text-white "
+      className="relative w-full text-white overflow-hidden"
       style={{
-        backgroundImage: 'linear-gradient(135deg, #0E0524 , #FFC107)',  
+        backgroundImage: 'linear-gradient(135deg, #0E0524 , #FFC107)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
     >
-      
-      <div className="max-w-screen-2xl mx-auto px-8 md:px-16 mt-6">
+      {/* Background icons */}
+      <div className="absolute inset-0 pointer-events-none z-0">
+        {/* Responsive Icons */}
+        <i
+          className="fas fa-cogs text-gray-700 opacity-20"
+          style={{
+            position: 'absolute',
+            top: '10%',
+            right: '5%',
+            fontSize: 'clamp(40px, 5vw, 70px)',  
+          }}
+        ></i>
+        <i
+          className="fas fa-tools text-gray-700 opacity-20"
+          style={{
+            position: 'absolute',
+            top: '50%',
+            right: '15%',
+            fontSize: 'clamp(30px, 4vw, 50px)',
+          }}
+        ></i>
+        <i
+          className="fas fa-briefcase text-gray-700 opacity-20"
+          style={{
+            position: 'absolute',
+            top: '75%',
+            right: '6%',
+            fontSize: 'clamp(30px, 4vw, 45px)',
+          }}
+        ></i>
+        <i
+          className="fas fa-wrench text-gray-700 opacity-20"
+          style={{
+            position: 'absolute',
+            top: '10%',
+            right: '18%',
+            fontSize: 'clamp(20px, 3vw, 40px)',
+          }}
+        ></i>
+         
+      </div>
+
+      <div className="relative z-10 max-w-screen-2xl mx-auto px-8 md:px-16 mt-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-           
           <div>
             <h5 className="font-bold text-lg mb-4">About Service Me</h5>
             <p className="text-sm text-gray-200 leading-relaxed">
               Service Me connects you with trusted professionals and service providers for all your needs. Explore jobs, find providers, and learn more about our services.
             </p>
           </div>
-
-         
           <div>
             <h5 className="font-bold text-lg mb-4">Quick Links</h5>
             <ul className="space-y-2 text-sm text-gray-200">
@@ -47,11 +85,8 @@ const Footer = () => {
                   About Us
                 </a>
               </li>
-              
             </ul>
           </div>
-
-           
           <div className="text-right md:text-left">
             <h5 className="font-bold text-lg mb-4">Get the App</h5>
             <p className="text-sm text-gray-200 mb-2">
@@ -68,10 +103,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-
-     
         <hr className="border-gray-400 my-10" />
- 
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-200">
           <p className="mb-4 md:mb-0">
             &copy; 2024 <span className="text-yellow-400">Service Me</span>. All Rights Reserved.
@@ -117,4 +149,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
