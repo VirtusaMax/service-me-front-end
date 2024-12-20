@@ -3,6 +3,13 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import googlePlayBadge from "../../assets/footer_section/playbutton.png";
 
 const Footer = () => {
+  // Define a uniform size for all background icons
+  const iconStyle = {
+    position: 'absolute',
+    fontSize: 'clamp(40px, 5vw, 70px)', // Uniform size for all icons
+    color: 'rgba(128, 128, 128, 0.2)', // Adjust color and opacity
+  };
+
   return (
     <footer
       className="relative w-full text-white overflow-hidden"
@@ -14,44 +21,22 @@ const Footer = () => {
     >
       {/* Background icons */}
       <div className="absolute inset-0 pointer-events-none z-0">
-        {/* Responsive Icons */}
         <i
-          className="fas fa-cogs text-gray-700 opacity-20"
-          style={{
-            position: 'absolute',
-            top: '10%',
-            right: '5%',
-            fontSize: 'clamp(40px, 5vw, 70px)',  
-          }}
+          className="fas fa-cogs"
+          style={{ ...iconStyle, top: '10%', right: '5%' }}
         ></i>
         <i
-          className="fas fa-tools text-gray-700 opacity-20"
-          style={{
-            position: 'absolute',
-            top: '50%',
-            right: '15%',
-            fontSize: 'clamp(30px, 4vw, 50px)',
-          }}
+          className="fas fa-tools"
+          style={{ ...iconStyle, top: '50%', right: '15%' }}
         ></i>
         <i
-          className="fas fa-briefcase text-gray-700 opacity-20"
-          style={{
-            position: 'absolute',
-            top: '75%',
-            right: '6%',
-            fontSize: 'clamp(30px, 4vw, 45px)',
-          }}
+          className="fas fa-briefcase"
+          style={{ ...iconStyle, top: '75%', right: '6%' }}
         ></i>
         <i
-          className="fas fa-wrench text-gray-700 opacity-20"
-          style={{
-            position: 'absolute',
-            top: '10%',
-            right: '18%',
-            fontSize: 'clamp(20px, 3vw, 40px)',
-          }}
+          className="fas fa-wrench"
+          style={{ ...iconStyle, top: '10%', right: '18%' }}
         ></i>
-         
       </div>
 
       <div className="relative z-10 max-w-screen-2xl mx-auto px-8 md:px-16 mt-6">
