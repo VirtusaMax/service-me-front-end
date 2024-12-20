@@ -4,7 +4,7 @@ import { Bars3BottomLeftIcon, XMarkIcon, UserCircleIcon } from '@heroicons/react
 import logo from "../../assets/header_section/logo1.png";
 
 const Navbar = () => {
-    const Links = [q
+    const Links = [
         { name: 'Home', link: '/' },
         { name: 'About', link: '/about' },
         { name: 'Services', link: '/services' },
