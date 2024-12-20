@@ -7,14 +7,14 @@ const Navbar = () => {
     const Links = [
         { name: 'Home', link: '/' },
         { name: 'About', link: '/about' },
-        { name: 'Services', link: '/services' },
-        { name: 'Contact', link: '/contact' }
+        { name: 'Find Job', link: '/findjob' },
+        { name: 'Services', link: '/services' }
     ];
 
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className='shadow-md w-full fixed top-0 left-0 border-b-4 border-white'>
+        <div className='shadow-md w-full fixed top-0 left-0 border-b-4 border-white z-50'>
             <div className='md:px-10 py-4 px-7 flex justify-between items-center bg-[#0E0524] h-[80px]'>
  
                  <div className='flex text-2xl items-center gap-2'>
