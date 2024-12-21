@@ -6,18 +6,21 @@ import HowItWorks from '../components/custom-components/HowItWorks'
 import HeroSection from '../components/custom-components/HeroSection'
 import Footer from '../components/custom-components/Footer'
 import Register from '../section/register_section/Register'
+import HouseCleanerInterface from '../section/post_job/post_job'
 
 const Home = () => {
   return (
     <div className='flex flex-col bg-white max-w-[1600px]'>
       
       <Navbar/>
-      {/* <HeroSection/> */}
+      <HeroSection/> 
       <AboutUs/>
       <Register/>
       <Services/>
       <HowItWorks/>
       <Footer />
+      {/* <HouseCleanerInterface/>  */}
+      
     </div>
   )
 }
