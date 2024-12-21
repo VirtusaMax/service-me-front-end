@@ -7,6 +7,7 @@ import 'swiper/css/pagination';
 import background from '../../assets/register_section/backlogo.png';
 import profileData from "../../data/profileData.json";
 
+
 const Register = () => {
   return (
     <div className="mt-20 relative isolate overflow-hidden bg-custom-blue py-12 sm:py-16 px-4 sm:px-6 md:px-8 lg:px-12 pt-20"> {/* Added padding-top */}

@@ -1,7 +1,8 @@
-// src/components/Navbar.js
+// src/components/custom-components/Navbar.jsx
 import React, { useState } from 'react';
 import { Bars3BottomLeftIcon, XMarkIcon, UserCircleIcon } from '@heroicons/react/24/solid';
 import logo from "../../assets/header_section/logo1.png";
+import LoginModal from './LoginModal'; // Import LoginModal
 
 const Navbar = () => {
     const Links = [
@@ -12,6 +13,10 @@ const Navbar = () => {
     ];
 
     const [isOpen, setIsOpen] = useState(false);
+    const [showModal, setShowModal] = useState(false);
+
+    const openModal = () => setShowModal(true);
+    const closeModal = () => setShowModal(false);
 
     return (
         <div className='z-50 shadow-md w-full fixed top-0 left-0 border-b-4 border-white'>
@@ -51,6 +56,7 @@ const Navbar = () => {
                     {/* POST JOB Button */}
                     <button
                         className='btn bg-yellow-400 text-black py-2 px-3 md:ml-8 rounded md:static mr-4'
+                        onClick={openModal}
                     >
                         POST JOB
                     </button>
@@ -65,6 +71,9 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
+
+            {/* Login Modal */}
+            <LoginModal showModal={showModal} closeModal={closeModal} />
         </div>
     );
 };
