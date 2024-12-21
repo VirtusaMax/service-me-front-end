@@ -9,7 +9,7 @@ import profileData from "../../data/profileData.json";
 
 const Register = () => {
   return (
-    <div className="relative isolate overflow-hidden bg-custom-blue py-12 sm:py-16 px-4 sm:px-6 md:px-8 lg:px-12">
+    <div className="mt-20 relative isolate overflow-hidden bg-custom-blue py-12 sm:py-16 px-4 sm:px-6 md:px-8 lg:px-12 pt-20"> {/* Added padding-top */}
       <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-12 lg:gap-16">
         {/* Left Section */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
@@ -39,7 +39,7 @@ const Register = () => {
             breakpoints={{
               480: { slidesPerView: 1, spaceBetween: 10 },
               768: { slidesPerView: 2, spaceBetween: 20 },
-              1024: { slidesPerView: 2, spaceBetween: 30 },
+              1024: { slidesPerView: 3, spaceBetween: 30 },
             }}
             loop={true}
             coverflowEffect={{
