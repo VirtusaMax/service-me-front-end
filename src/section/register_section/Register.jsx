@@ -36,11 +36,11 @@ const Register = () => {
             modules={[EffectCoverflow, Pagination]}
             effect="coverflow"
             centeredSlides={true}
-            slidesPerView={3}
+            slidesPerView={1} // Default for very small screens
             breakpoints={{
-              640: { slidesPerView: 3 },
-              768: { slidesPerView: 3 },
-              1024: { slidesPerView: 3 },
+              640: { slidesPerView: 2 }, // Show 2 slides for screens >= 640px
+              768: { slidesPerView: 2 }, // Show 2 slides for screens >= 768px
+              1024: { slidesPerView: 3 }, // Show 3 slides for screens >= 1024px
             }}
             loop={true}
             coverflowEffect={{
@@ -56,19 +56,20 @@ const Register = () => {
           >
             {profileData.map((profile, index) => (
               <SwiperSlide key={index} className="text-center">
-                <div className="relative bg-yellow-400 border-4 border-black  text-center rounded-lg p-4 shadow-lg transform transition-transform duration-300 ease-in-out hover:scale-105">
+                <div className="relative mt-6 mb-12 border-custom-yellow bg-custom-blue border-4   text-center rounded-lg p-4 shadow-lg transform transition-transform duration-300 ease-in-out motion-safe:hover:scale-110 motion-reduce:transform-none">
                   <img
                     src={profile.img}
                     alt={profile.name}
                     className="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px] object-cover rounded-lg border-4 border-custom-blue mx-auto"
                   />
                   <div className="p-4">
-                    <h3 className="text-xl font-bold mb-2">{profile.name}</h3>
+                    <h3 className="text-xl font-bold  text-white  mb-2">{profile.name}</h3>
                     <button
-                      className="px-4 py-2 bg-black text-yellow-400 font-semibold rounded-lg hover:bg-yellow-400 hover:text-black border transition"
+                    className="px-1 py-1  bg-custom-yellow  text-white font-normal rounded-lg  hover:bg-yellow-400  hover:text-black  border transition sm:px-6 sm:py-3md:px-8 md:py-4 text-sm sm:text-base md:text-lg"
                     >
                       View Profile
                     </button>
+
                   </div>
                 </div>
               </SwiperSlide>
