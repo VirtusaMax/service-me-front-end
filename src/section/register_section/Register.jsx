@@ -36,11 +36,12 @@ const Register = () => {
             modules={[EffectCoverflow, Pagination]}
             effect="coverflow"
             centeredSlides={true}
-            slidesPerView={1}
+            slidesPerView={1} // Default for small screens
             breakpoints={{
-              480: { slidesPerView: 1, spaceBetween: 10 },
-              768: { slidesPerView: 2, spaceBetween: 20 },
-              1024: { slidesPerView: 3, spaceBetween: 30 },
+              320: { slidesPerView: 1, spaceBetween: 10 }, // Below `md`
+              850: { slidesPerView: 2, spaceBetween: 20 }, // Between `850-md`
+              1024: { slidesPerView: 2, spaceBetween: 30 }, // `lg`
+              1280: { slidesPerView: 3, spaceBetween: 40 }, // `xl`
             }}
             loop={true}
             coverflowEffect={{
@@ -56,17 +57,18 @@ const Register = () => {
           >
             {profileData.map((profile, index) => (
               <SwiperSlide key={index} className="text-center">
-                <div className="relative mt-6 mb-12 bg-custom-yellow border border-custom-blue rounded-lg p-4 sm:p-6 shadow-lg hover:shadow-2xl transform transition-transform duration-300 hover:scale-105">
-                  {/* Responsive Image */}
+                <div className="relative mt-6 mb-12 bg-custom-yellow border-2 border-custom-yellow rounded-lg shadow-lg hover:shadow-2xl transform transition-transform duration-300 hover:scale-105 overflow-hidden">
+                  {/* Image */}
                   <img
                     src={profile.img}
                     alt={profile.name}
-                    className="w-full h-auto max-h-[400px] object-cover rounded-lg"
+                    className="w-full h-auto object-cover"
                   />
-                  <div className="mt-4">
-                    <h3 className="text-lg font-bold text-custom-blue">{profile.name}</h3>
+                  {/* Name and Button Section */}
+                  <div className="p-4 bg-custom-blue">
+                    <h3 className="text-lg font-bold text-custom-yellow">{profile.name}</h3>
                     <button
-                      className="mt-4 px-6 py-2 bg-custom-blue text-custom-yellow font-medium rounded-md hover:bg-custom-white hover:text-custom-blue transition duration-300"
+                      className="mt-1 px-2 sm:px-2 py-0.5 sm:py-0.5 text-sm sm:text-sm md:text-sm bg-custom-yellow text-custom-blue font-medium rounded-md hover:bg-custom-white hover:text-custom-blue transition duration-300"
                     >
                       View Profile
                     </button>
