@@ -13,7 +13,7 @@ const Footer = () => {
     <footer
       className="relative w-full text-gray-300 overflow-hidden"
       style={{
-        backgroundImage: "linear-gradient(135deg, #1a1a2e, #16213e)",
+        backgroundImage: "linear-gradient(135deg, #1a1a2e, #f7b731 150%)", // Darker blue with a bit of yellow
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -55,7 +55,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/service-providers" className="hover:text-yellow-400 transition duration-200">
+                <a href="/ServiceProvider" className="hover:text-yellow-400 transition duration-200">
                   Service Providers
                 </a>
               </li>
