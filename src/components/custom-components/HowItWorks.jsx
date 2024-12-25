@@ -25,6 +25,10 @@ const HowItWorks = () => {
               width="100%"
               height="100%"
               controls
+ 
+              playing={true} // Enable autoplay
+              muted={true} // Mute the video for autoplay to work without user interaction
+ 
             />
           </div>
         </div>
