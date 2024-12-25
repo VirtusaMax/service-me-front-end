@@ -1,13 +1,11 @@
 import React from 'react';
-import profileimage from "../../assets/workprofile/profileimage.png";
 
-
-const JobCard = ({ name, location, phone, date }) => {
+const JobCard = ({ name, location, phone, date, profileImage }) => {
   return (
     <div className="bg-white shadow-md rounded-md flex items-center p-4 mb-4">
     
       <img
-        src={profileimage}  
+        src={profileImage}  // Use the dynamic profile image passed as a prop
         alt="Profile"
         className="rounded-full w-16 h-16 object-cover"
       />
