@@ -7,9 +7,9 @@
       "date": "2024/12/18"
     },
     {
-      "name": "John Doe",
+      "name": "Vidusha",
       "location": "Colombo",
-      "profileImage": "https://via.placeholder.com/50",
+      "profileImage": "src/assets/post_job/pro-2.jpeg",
       "description": "Looking for a reliable house cleaner.",
       "date": "2024/12/20"
     },
@@ -21,7 +21,7 @@
         "date": "2024/12/18"
     },
     {
-        "name": "John Doe",
+        "name": "Dinithi",
         "location": "Colombo",
         "profileImage": "https://via.placeholder.com/50",
         "description": "Looking for a reliable house cleaner.",

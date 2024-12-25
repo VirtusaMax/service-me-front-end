@@ -10,19 +10,33 @@ const PostJob = () => {
 
       {/* Main Content Section */}
       <div className="flex flex-1 p-6 gap-4">
+
         {/* Cards Section */}
-        <div className="grid grid-cols-2 gap-6 flex-1" style={{ gridTemplateRows: "repeat(3, minmax(0, 1fr))" }}>
-          {jobData.slice(0, 6).map((job, i) => ( 
+        <div
+          className="grid grid-cols-2 gap-6 flex-1 "
+          style={{ gridTemplateRows: "repeat(3, minmax(0, 1fr))" }}
+        >
+          {jobData.slice(0, 6).map((job, i) => (
             <div
               key={i}
-              className="bg-white shadow-lg p-4 rounded-lg hover:shadow-2xl w-[428px] h-[211px]"
+              className="relative bg-white shadow-lg p-4 rounded-lg hover:shadow-2xl w-[428px] h-[211px] "
             >
+              {/* Edit and Delete Icons */}
+              <div className="absolute top-2 right-2 flex space-x-2">
+                <button className="text-bg-custom-blue hover:text-gray-500">
+                  <i className="fas fa-edit"></i> {/* Edit icon */}
+                </button>
+                <button className="text-bg-custom-blue hover:text-gray-500">
+                  <i className="fas fa-trash-alt"></i> {/* Delete icon */}
+                </button>
+              </div>
+
               <div className="flex items-center mb-4">
                 {/* Profile Image */}
                 <img
                   src={job.profileImage}
                   alt="Profile"
-                  className="w-15 h-15 rounded-full object-cover"
+                  className="w-10 h-10 rounded-full object-cover"
                 />
                 <div className="ml-4">
                   <h3 className="font-bold text-gray-700">{job.name}</h3>
@@ -37,7 +51,9 @@ const PostJob = () => {
                 <button className="bg-custom-blue px-10 py-2 rounded text-white">
                   Contact
                 </button>
-                <button className="bg-custom-blue px-10 py-2 rounded text-white">Share</button>
+                <button className="bg-custom-blue px-10 py-2 rounded text-white">
+                  Share
+                </button>
               </div>
             </div>
           ))}
