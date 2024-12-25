@@ -1,10 +1,11 @@
 import React from "react";
 import backgroundImage from "../../assets/work_section/worksbg.png";
+import ReactPlayer from "react-player";
 
 const HowItWorks = () => {
   return (
     <div
-      className="relative bg-cover bg-center py-20 px-14 h-[600px] w-full top-4"
+      className="relative bg-cover bg-center py-20 px-4 sm:px-8 md:px-14 h-auto w-full top-4"
       style={{
         backgroundImage: `url(${backgroundImage})`,
       }}
@@ -12,7 +13,6 @@ const HowItWorks = () => {
       <div className="absolute inset-0 bg-white bg-opacity-85"></div>
 
       <div className="relative z-10 w-full">
-       
         <h2 className="text-yellow-400 text-3xl font-extrabold mb-8 text-left">
           HOW IT WORKS?
         </h2>
@@ -25,6 +25,8 @@ const HowItWorks = () => {
               width="100%"
               height="100%"
               controls
+              playing={true} // Autoplay enabled
+              muted={true}  
             />
           </div>
         </div>
