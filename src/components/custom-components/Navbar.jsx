@@ -8,8 +8,8 @@ const Navbar = () => {
     const Links = [
         { name: 'Home', link: '/' },
         { name: 'About', link: '/about' },
+        { name: 'Find Job', link: '/findjob' },
         { name: 'Services', link: '/services' },
-        { name: 'Contact', link: '/contact' }
     ];
 
     const [isOpen, setIsOpen] = useState(false);
