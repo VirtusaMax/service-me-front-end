@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import googlePlayBadge from "../../assets/footer_section/playbutton.png";
 
@@ -13,7 +14,7 @@ const Footer = () => {
     <footer
       className="relative w-full text-gray-300 overflow-hidden"
       style={{
-        backgroundImage: "linear-gradient(135deg, #0a0e1a 50%, #1a1a2e 30%, #f7b731 200%)", // Darker blue with a bit of yellow
+        backgroundImage: "linear-gradient(135deg, #0a0e1a 20%, #1a1a2e 65%, #f7b731 200%)", // Darker blue with a bit of yellow
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -50,29 +51,29 @@ const Footer = () => {
             <h5 className="font-bold text-lg mb-4 text-yellow-400">Quick Links</h5>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="/jobs" className="hover:text-yellow-400 transition duration-200">
+                <Link to="/jobs" className="hover:text-yellow-400 transition duration-200">
                   Jobs
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/ServiceProvider" className="hover:text-yellow-400 transition duration-200">
+                <Link to="/ServiceProvider" className="hover:text-yellow-400 transition duration-200">
                   Service Providers
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/how-it-works" className="hover:text-yellow-400 transition duration-200">
+                <Link to="/how-it-works" className="hover:text-yellow-400 transition duration-200">
                   How it Works
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/about-us" className="hover:text-yellow-400 transition duration-200">
+                <Link to="/about-us" className="hover:text-yellow-400 transition duration-200">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/FAQ" className="hover:text-yellow-400 transition duration-200">
+                <Link to="/FAQ" className="hover:text-yellow-400 transition duration-200">
                   FAQ
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
