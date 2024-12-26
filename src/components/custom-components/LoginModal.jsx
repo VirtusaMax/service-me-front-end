@@ -198,7 +198,7 @@ const LoginModal = ({ showModal, closeModal }) => {
                     {isSignUp ? 'Already have an account?' : "Don't have an account?"}{' '}
                     <span
                         className="text-custom-blue cursor-pointer"
-                        onClick={() => setIsSignUp(!isSignUp)}
+                        onClick={( ) => setIsSignUp(!isSignUp)}
                     >
                         {isSignUp ? 'Sign In' : 'Sign Up'}
                     </span>
