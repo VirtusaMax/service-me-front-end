@@ -1,42 +1,42 @@
  [
     {
       "name": "Alex B.",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRU68AVwhBfw6sjuntzSy2sDEgBh8Aff69qBRgYumT-Kpwp-IRPOXboKdpN45yi85gPcs&usqp=CAU"
+      "img": "src/assets/register_section/man1.png"
     },
     {
       "name": "Jessica",
-       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIqvNKP_YZYQuW0NiswBoHDTmDnwrfeNBLFKvmPITll9E2LXzDnOpZ7lPUprIvrCuI2wI&usqp=CAU"
+       "img": "src/assets/register_section/women4.png"
     },
     {
       "name": "Chamen",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTImSDKr9ZPHb81653a12uwsdTDwbmn_27Log&s"
+      "img": "src/assets/register_section/man3.png"
     },
     {
       "name": "Jacob",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf3Svt3lP8tIlKr0UMsNQdKxy0NyNgAaOtakf4IX_tMcSgfRT-we77rWVBxByRhRdfEkw&usqp=CAU"
+      "img": "src/assets/register_section/women2.png"
     },
     {
       "name": "Jonathan",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0ROxIb7mD-40KbZPoABni9yd5vujo40uqcwK1EJIjCU2KsY4Uyk68wORiPncri1cCZBQ&usqp=CAU"
+      "img": "src/assets/register_section/womenn1.png"
     },
     {
       "name": "Alex B.",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRU68AVwhBfw6sjuntzSy2sDEgBh8Aff69qBRgYumT-Kpwp-IRPOXboKdpN45yi85gPcs&usqp=CAU"
+      "img": "src/assets/register_section/man1.png"
     },
     {
       "name": "Jessica",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIqvNKP_YZYQuW0NiswBoHDTmDnwrfeNBLFKvmPITll9E2LXzDnOpZ7lPUprIvrCuI2wI&usqp=CAU"
+      "img": "src/assets/register_section/man3.png"
     },
     {
       "name": "Chamen",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTImSDKr9ZPHb81653a12uwsdTDwbmn_27Log&s"
+      "img": "src/assets/register_section/women3.png"
     },
     {
       "name": "Jacob",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf3Svt3lP8tIlKr0UMsNQdKxy0NyNgAaOtakf4IX_tMcSgfRT-we77rWVBxByRhRdfEkw&usqp=CAU"
+      "img": "src/assets/register_section/man1.png"
     },
     {
       "name": "Jonathan",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0ROxIb7mD-40KbZPoABni9yd5vujo40uqcwK1EJIjCU2KsY4Uyk68wORiPncri1cCZBQ&usqp=CAU"
+      "img": "src/assets/register_section/man4.png"
     }
   ]
