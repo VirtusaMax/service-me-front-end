@@ -7,23 +7,23 @@ import 'swiper/css/pagination';
 import background from '../../assets/register_section/backlogo.png';
 import profileData from "../../data/profileData.json";
 
+
 const Register = () => {
   return (
-    <div className="relative isolate overflow-hidden bg-custom-light py-12 sm:py-16 px-4 sm:px-6 md:px-8 lg:px-12">
+    <div className="mt-20 relative isolate overflow-hidden bg-custom-blue py-12 sm:py-16 px-4 sm:px-6 md:px-8 lg:px-12 pt-20"> {/* Added padding-top */}
       <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-12 lg:gap-16">
-
         {/* Left Section */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
-          <h2 className="text-5xl  py-16 sm:text-4xl font-bold tracking-tight text-custom-yellow">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-custom-yellow py-8">
             Meet the Best Service Providers
           </h2>
-          <p className=" text-base sm:text-lg font-medium text-gray-700">
+          <p className="text-base sm:text-lg font-medium text-custom-white leading-relaxed">
             Register with us today, start doing jobs, and get paid. Our trusted service providers are ready to assist you.
           </p>
           <div className="mt-6">
             <a
               href="#"
-              className="inline-block px-6 py-3 sm:px-8 sm:py-4 bg-custom-blue text-white font-semibold text-sm sm:text-base rounded-lg shadow-lg hover:bg-custom-yellow transition duration-300 ease-in-out"
+              className="inline-block px-6 py-3 sm:px-8 sm:py-4 bg-custom-yellow text-custom-blue font-semibold text-sm sm:text-base rounded-lg shadow-lg hover:bg-custom-white hover:text-custom-blue transition duration-300 ease-in-out"
             >
               REGISTER NOW
             </a>
@@ -36,36 +36,39 @@ const Register = () => {
             modules={[EffectCoverflow, Pagination]}
             effect="coverflow"
             centeredSlides={true}
-            slidesPerView={3}
+            slidesPerView={1} // Default for small screens
             breakpoints={{
-              640: { slidesPerView: 3 },
-              768: { slidesPerView: 3 },
-              1024: { slidesPerView: 3 },
+              320: { slidesPerView: 1, spaceBetween: 10 }, // Below `md`
+              850: { slidesPerView: 2, spaceBetween: 20 }, // Between `850-md`
+              1024: { slidesPerView: 2, spaceBetween: 30 }, // `lg`
+              1280: { slidesPerView: 3, spaceBetween: 40 }, // `xl`
             }}
             loop={true}
             coverflowEffect={{
-              rotate: 0,
-              stretch: 0,
-              depth: 200,
-              modifier: 1.5,
-              slideShadows: false,
+              rotate: 30,
+              stretch: 10,
+              depth: 150,
+              modifier: 2,
+              slideShadows: true,
             }}
             pagination={{ clickable: true }}
             grabCursor={true}
-            className="max-w-full mx-auto"
+            className="w-full mx-auto"
           >
             {profileData.map((profile, index) => (
               <SwiperSlide key={index} className="text-center">
-                <div className="relative bg-yellow-400 border-4 border-black  text-center rounded-lg p-4 shadow-lg transform transition-transform duration-300 ease-in-out hover:scale-105">
+                <div className="relative mt-6 mb-12 bg-custom-yellow border-2 border-custom-yellow rounded-lg shadow-lg hover:shadow-2xl transform transition-transform duration-300 hover:scale-105 overflow-hidden">
+                  {/* Image */}
                   <img
                     src={profile.img}
                     alt={profile.name}
-                    className="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px] object-cover rounded-lg border-4 border-custom-blue mx-auto"
+                    className="w-full h-auto object-cover"
                   />
-                  <div className="p-4">
-                    <h3 className="text-xl font-bold mb-2">{profile.name}</h3>
+                  {/* Name and Button Section */}
+                  <div className="p-4 bg-custom-blue">
+                    <h3 className="text-lg font-bold text-custom-yellow">{profile.name}</h3>
                     <button
-                      className="px-4 py-2 bg-black text-yellow-400 font-semibold rounded-lg hover:bg-yellow-400 hover:text-black border transition"
+                      className="mt-1 px-2 sm:px-2 py-0.5 sm:py-0.5 text-sm sm:text-sm md:text-sm bg-custom-yellow text-custom-blue font-medium rounded-md hover:bg-custom-white hover:text-custom-blue transition duration-300"
                     >
                       View Profile
                     </button>
@@ -81,7 +84,7 @@ const Register = () => {
       <img
         alt="background"
         src={background}
-        className="absolute inset-0 -z-10 opacity-10 h-full w-full object-cover"
+        className="absolute inset-0 -z-10 opacity-5 h-full w-full object-cover"
       />
     </div>
   );

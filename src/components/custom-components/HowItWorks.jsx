@@ -25,6 +25,8 @@ const HowItWorks = () => {
               width="100%"
               height="100%"
               controls
+              playing={true} // Autoplay enabled
+              muted={true}  
             />
           </div>
         </div>
