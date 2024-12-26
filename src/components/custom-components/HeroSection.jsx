@@ -19,7 +19,7 @@ const HeroSection = () => {
                         <button className='bg-[#FCC215] text-[#0E0524] font-bold text-s h-[39px] px-6 py-0 rounded-full mt-2'>
                             I want to work
                         </button>
-                        <button className='bg-[#FCC215] text-[#0E0524] font-bold text-s h-[39px] px-6 py-0 rounded-full mt-2'>
+                        <button className='bg-[#FCC215] text-[#0E0524] font-bold text-s h-[39px] px-6 py-0 rounded-full mt-2' onClick={() => navigate('PostJob')}>
                             I want to hire
                         </button>
                     </div>

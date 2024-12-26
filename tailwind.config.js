@@ -14,7 +14,10 @@ export default {
       },
       backgroundImage: {
         'register-pattern': "url('assets/register_section/backlog.png')",
-       }
+       },
+      screens: {
+        'custom-md': '900px',
+      },
 
     },
   },

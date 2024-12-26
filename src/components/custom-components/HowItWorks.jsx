@@ -27,6 +27,7 @@ const HowItWorks = () => {
               controls
               playing={true} // Autoplay enabled
               muted={true}  
+              loop={true}
             />
           </div>
         </div>
