@@ -6,22 +6,36 @@ import HowItWorks from '../components/custom-components/HowItWorks'
 import HeroSection from '../components/custom-components/HeroSection'
 import Footer from '../components/custom-components/Footer'
 import Register from '../section/register_section/Register'
+<<<<<<< HEAD
+import PostJob from './post_job_page/postjob_section/post_job'
+=======
 import FAQPage from './faq_page/FaqPage'
 
+>>>>>>> dev
 
 const Home = () => {
   return (
     <div className='flex flex-col bg-white max-w-[1600px]'>
       
       <Navbar/>
+<<<<<<< HEAD
+      <HeroSection/> 
+=======
       <HeroSection/>
+>>>>>>> dev
       <AboutUs/>
       <Services/>
       <Register/>
       <HowItWorks/>
+<<<<<<< HEAD
+       <Footer />
+      <PostJob/> 
+      
+=======
       <Footer />
       <FAQPage/>
  
+>>>>>>> dev
     </div>
   )
 }
