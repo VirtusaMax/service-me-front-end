@@ -6,6 +6,8 @@ import HowItWorks from '../components/custom-components/HowItWorks'
 import HeroSection from '../components/custom-components/HeroSection'
 import Footer from '../components/custom-components/Footer'
 import Register from '../section/register_section/Register'
+import FAQPage from './faq_page/FaqPage'
+
 
 const Home = () => {
   return (
@@ -18,8 +20,10 @@ const Home = () => {
       <Register/>
       <HowItWorks/>
       <Footer />
+      <FAQPage/>
+ 
     </div>
   )
 }
 
-export default Home
+export default Home;
