@@ -8,6 +8,7 @@ import Footer from '../components/custom-components/Footer';
 import Register from '../section/register_section/Register';
 import PostJob from './post_job_page/postjob_section/post_job';
 import FAQPage from './faq_page/FaqPage';
+import ServiceProvider from './ServiceProvider';
 
 const Home = () => {
   return (
@@ -19,8 +20,6 @@ const Home = () => {
       <Register />
       <HowItWorks />
       <Footer />
-      {/* <PostJob />
-      <FAQPage /> */}
      
     </div>
   );

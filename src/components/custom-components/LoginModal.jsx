@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { XMarkIcon, EyeIcon, EyeSlashIcon } from '@heroicons/react/24/solid';
+import { useNavigate } from 'react-router-dom';
+
 
 const LoginModal = ({ showModal, closeModal }) => {
     // State for managing sign-up / sign-in toggle, password visibility, and password fields
@@ -8,6 +10,7 @@ const LoginModal = ({ showModal, closeModal }) => {
     const [showPasswordSignUp, setShowPasswordSignUp] = useState(false);
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
+    const navigate = useNavigate(); 
 
     // If modal is not shown, return null (don't render anything)
     if (!showModal) return null;
@@ -23,7 +26,8 @@ const LoginModal = ({ showModal, closeModal }) => {
         }
 
         // Proceed with form submission logic here (e.g., API call)
-        console.log('Form submitted');
+        navigate('/postjob');
+        //console.log('Form submitted');
     };
 
     return (
