@@ -5,8 +5,8 @@ import workprofile1 from "../assets/service_provider/workprofile1.png";
 import workprofile2 from "../assets/service_provider/workprofile2.jpg";
 import workprofile3 from "../assets/service_provider/workprofile3.png";
 import bg1 from "../assets/service_provider/bg1.png";
-import Navbar from "../components/custom-components/Navbar"; // Import the Navbar component
-import TopNavbar from "../components/custom-components/TopNavBar";  // Import TopNavbar
+import Navbar from "../components/custom-components/Navbar"; // Import Navbar
+import TopNavbar from "../components/custom-components/TopNavBar"; // Import TopNavbar
 
 const ServiceProvider = () => {
   const [selectedCategory, setSelectedCategory] = useState("ALL");
@@ -21,16 +21,21 @@ const ServiceProvider = () => {
 
   return (
     <>
-      {/* New Navbar at the top */}
-      <Navbar /> {/* This is the new Navbar that will be above the TopNavbar */}
+      {/* Navbar */}
+      <div className="bg-black text-white py-0.5 shadow-md">
+        <Navbar />
+      </div>
 
-      {/* Top Navbar */}
-      <TopNavbar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} /> 
+      {/* TopNavbar */}
+      <div className="fixed top-14 w-full z-40 bg-black text-white py-0.5 shadow-md pt-5">
+        <TopNavbar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
+      </div>
 
       {/* Main Content Section */}
-      <div className="container mx-auto p-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-center">
-          <div className="flex justify-center sm:col-span-2 lg:col-span-1">
+      <div className="container mx-auto px-4 pt-20 pb-6 mt-10">
+        <div className="pt-12 py-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center">
+          {/* Left Section: Image */}
+          <div className="flex justify-center md:col-span-2 lg:col-span-1">
             <img
               src={workprofile}
               alt="Worker"
@@ -38,7 +43,11 @@ const ServiceProvider = () => {
             />
           </div>
 
-          <div className="w-full h-full sm:col-span-2 lg:col-span-2 bg-opacity-50" style={{ backgroundImage: `url(${bg1})` }}>
+          {/* Right Section: Job Cards */}
+          <div
+            className="w-full h-full md:col-span-2 lg:col-span-2 bg-opacity-50 p-4 rounded-lg"
+            style={{ backgroundImage: `url(${bg1})` }}
+          >
             {filteredJobs.map((job, index) => (
               <div className="pt-2" key={index}>
                 <JobCard
