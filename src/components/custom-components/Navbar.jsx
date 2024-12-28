@@ -7,7 +7,7 @@ import LoginModal from './LoginModal'; // Import LoginModal
 const Navbar = () => {
     const Links = [
         { name: 'Home', link: '/' },
-        { name: 'About', link: '/about' },
+        { name: 'About', link: '/AboutUs' },
         { name: 'Find Job', link: '/findjob' },
         { name: 'Services', link: '/services' },
     ];

@@ -1,12 +1,12 @@
 import React from "react";
-import FilteringNavBar from "./FilteringNavBar";
 import jobData from "../../../data/postJobCardData.json";
+import TopNavbar from "../../../components/custom-components/TopNavBar";
 
 const PostJob = () => {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header Section */}
-      <FilteringNavBar />
+      <TopNavbar/>
 
       {/* Main Content Section */}
       <div className="flex flex-1 p-6 gap-4">
@@ -41,6 +41,7 @@ const PostJob = () => {
                 <div className="ml-4">
                   <h3 className="font-bold text-gray-700">{job.name}</h3>
                   <p className="text-gray-500 text-sm">{job.location}</p>
+                  <p className="text-gray-500 text-sm">{job.category}</p>
                 </div>
               </div>
               {/* Description */}
