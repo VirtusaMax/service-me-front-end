@@ -1,16 +1,28 @@
-import React from 'react'
-import Services from '../section/service/Services'
-import AboutUs from '../section/about/AboutUs'
-import Navbar from '../components/custom-components/Navbar'
+import React from 'react';
+import Services from '../section/service/Services';
+import AboutUs from '../section/about/AboutUs';
+import Navbar from '../components/custom-components/Navbar';
+import HowItWorks from '../components/custom-components/HowItWorks';
+import HeroSection from '../components/custom-components/HeroSection';
+import Footer from '../components/custom-components/Footer';
+import Register from '../section/register_section/Register';
+import PostJob from './post_job_page/postjob_section/post_job';
+import FAQPage from './faq_page/FaqPage';
+import ServiceProvider from './ServiceProvider';
 
 const Home = () => {
   return (
     <div className='flex flex-col bg-white max-w-[1600px]'>
-      <Navbar/>
-      <AboutUs/>
-      <Services/>
+      <Navbar />
+      <HeroSection />
+      <AboutUs />
+      <Services />
+      <Register />
+      <HowItWorks />
+      <Footer />
+     
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
